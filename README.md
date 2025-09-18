@@ -1,86 +1,99 @@
-$ ./initialize-profile.sh
+<!-- Header -->
+<div align="center">
+  
+# 👋 Hi, I’m <span style="color:#4e9af1">Parth Lawand</span>  
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=4e9af1&center=true&vCenter=true&width=500&lines=Software+Engineer+in+the+making;AI+%26+ML+Explorer;Oracle+Certified+Java+Developer;Always+Learning+%7C+Always+Building" alt="Typing SVG" />
+  
+</div>
 
-██████╗ █████╗ ██████╗ ████████╗██╗  ██╗
-██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██║  ██║
-██████╔╝███████║██████╔╝   ██║   ███████║
-██╔═══╝ ██╔══██║██╔══██╗   ██║   ██╔══██║
-██║     ██║  ██║██║  ██║   ██║   ██║  ██║
-╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
+---
 
->>> Initializing developer instance...
->>> Loading core modules...
->>> Compiling skills...
->>> Status: Ready to build & innovate.
+## 🪐 About Me  
 
------------------------------------------------------------------------
+✨ *Turning ideas into scalable solutions*  
+🎓 B.Tech CSE @ VIT-AP (AI & ML specialization) | CGPA: 8.87  
+☕ Oracle Certified Java SE 17 Developer | Reliance Foundation Scholar  
+💡 Building projects in **AI, NLP, and Full-Stack Development**  
+⚡ Motto: *“Every commit is a step closer to the future I’m building.”*  
 
-Hello there! I'm Parth, a software architect and problem-solver.
-I build robust, scalable backend systems and intelligent applications.
-My core philosophy is to write clean, efficient code that not only
-works but also stands the test of time.
+---
 
-Let's explore the system architecture.
+## 🛠️ My Tech Playground  
 
-# Core Operating System & Languages
-[cite_start]kernel: [Java, Python, JavaScript, SQL] # [cite: 18]
-[cite_start]core_libraries: [Data Structures & Algorithms, OOP, OS, Computer Networks] # [cite: 25]
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=java,python,js,spring,react,tensorflow,docker,mysql,mongodb,linux,git,github,vscode" />
+</p>
 
-# Deployed Services & Frameworks
-[cite_start]backend_services: [Spring Boot, Spring Security, REST APIs] # [cite: 27, 32]
-[cite_start]frontend_services: [ReactJS, HTML, CSS, Thymeleaf] # [cite: 19, 18, 27]
-[cite_start]database_engine: [MySQL, MongoDB] # [cite: 24]
+---
 
-# AI/ML Daemons (Background Processes)
-[cite_start]ml_suite: [TensorFlow, Keras, Scikit-learn] # [cite: 19]
-[cite_start]nlp_engine: [Transformers] # [cite: 38]
+## 🚀 Featured Projects  
 
-# DevOps & Tooling
-[cite_start]version_control: [Git, GitHub] # [cite: 23]
-[cite_start]virtualization: [Docker] # [cite: 23]
-[cite_start]ci_cd_pipeline: [CI/CD Concepts] # [cite: 25]
-[cite_start]ide_and_tools: [VS Code, Postman, Jupyter Notebook, Unix/Linux] # [cite: 23]
+<table>
+<tr>
+<td width="50%">
+  
+### 🔹 Secure Employee Management System  
+🛡️ **Spring Boot + Thymeleaf + MySQL**  
+- Role-based access + authentication  
+- 20% faster DB queries, 15% fewer UI errors  
 
-[INFO]    Deployment successful: Secure Employee Management System
-          [cite_start]|> Tech Stack: [Spring Boot, Spring Security, JPA/Hibernate, MySQL, Thymeleaf] [cite: 27]
-          [cite_start]|> Impact: Architected a full-stack platform with role-based access control. [cite: 28, 29]
-          [cite_start]|> Optimization: Reduced query latency by 20% with Spring Data JPA. [cite: 30]
+</td>
+<td width="50%">
+  
+### 🔹 Terms & Conditions Summariser  
+📜 **Python + Transformers + Flask**  
+- Summarizes lengthy legal docs  
+- Pegasus + KeyBERT → readable PDF reports  
 
-[INFO]    Deployment successful: Employee Management RESTful Service
-          [cite_start]|> Tech Stack: [Spring Boot, Spring Data JPA, Hibernate, MySQL] [cite: 32]
-          [cite_start]|> Impact: Delivered a secure, scalable RESTful API for decoupled applications. [cite: 34]
-          [cite_start]|> Optimization: Cut boilerplate code by 30% using Repository/DTO patterns. [cite: 35]
+</td>
+</tr>
+</table>
 
-[INFO]    Deployment successful: Terms & Conditions Summariser (Team Project)
-          [cite_start]|> Tech Stack: [Python, Transformers, Flask, KeyBERT] [cite: 38, 41]
-          [cite_start]|> Impact: Built an NLP app to summarize complex legal documents automatically. [cite: 40]
-          [cite_start]|> Optimization: Improved summarization efficiency by 35%. [cite: 41]
+➡️ Check more of my work in [Repositories](https://github.com/ParthLawand)  
 
-$ ./run --list-all
+---
 
-> Executing: Oracle Certified Professional: Java SE 17 Developer (2025)
-  [cite_start][SYSTEM] Validated advanced Java application development skills. [cite: 46]
+## 🏆 Power-Ups (Achievements)  
 
-> Executing: Reliance Foundation Undergraduate Scholar (2022)
-  [cite_start][SYSTEM] Awarded to top 5% of students nationwide for academic excellence. [cite: 45]
+- 🎖 Reliance Foundation Undergraduate Scholar (Top 5% in India)  
+- ☕ Oracle Certified Professional: **Java SE 17 Developer**  
+- 🤖 OCI Generative AI Professional Certification  
+- ☁ Microsoft Azure Data Fundamentals (DP-900)  
 
-> Executing: OCI Generative AI Professional (2025)
-  [cite_start][SYSTEM] Recognized proficiency in Oracle's Generative AI solutions. [cite: 47, 50]
+---
 
-> Executing: Microsoft Azure Data Fundamentals (DP-900) (2024)
-  [cite_start][SYSTEM] Certified foundational knowledge of core data concepts. [cite: 49, 51]
+## 👑 Leadership Journey  
 
-$ tree
-.
-├── GFG_VIT-AP_Chapter/
-[cite_start]│   └── role.txt      # Content: Technical Team Lead (2024-2025) [cite: 53, 54, 55]
-[cite_start]│   └── action.log    # "Mentored 10+ junior developers on DSA and full-stack." [cite: 58]
-│
-└── Amhi_Marathi_Association/
-    [cite_start]└── role.txt      # Content: Creative Department Lead (2023-2024) [cite: 59, 60]
-    [cite_start]└── action.log    # "Orchestrated events, increasing participation by 30%." [cite: 61]
+- 🖥️ **Tech Lead — GFG VIT-AP Chapter** → Mentored 10+ juniors in DSA & full-stack  
+- 🎨 **Creative Lead — Amhi Marathi Association** → Boosted participation by 30%  
 
-$ ./connect --all
-> Establishing connections...
+---
 
-  [cite_start][NETWORK]  Email      ->   parthlawand10@gmail.com [cite: 2]
-  [cite_start][NETWORK]  LinkedIn   ->   linkedin.com/in/parth-lawand [cite: 2]
+## 📊 My GitHub Universe  
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ParthLawand&show_icons=true&theme=radical" height="180" />
+  <img src="https://streak-stats.demolab.com?user=ParthLawand&theme=radical" height="180" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ParthLawand&theme=react-dark&hide_border=true" alt="activity graph"/>
+</p>
+
+---
+
+## 🌍 Let’s Connect  
+
+<p align="center">
+  <a href="https://linkedin.com/in/parth-lawand"><img src="https://img.shields.io/badge/LinkedIn-0e76a8?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://github.com/ParthLawand"><img src="https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="mailto:parthlawand10@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</p>
+
+---
+
+<div align="center">
+
+✨ Thanks for visiting my profile — the journey has just begun! 🚀 
+
+</div>
