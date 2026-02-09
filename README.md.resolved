@@ -1,82 +1,64 @@
 <div align="center">
-  <img src="./assets/console_header.svg" width="100%" alt="Mission Control Dashboard" />
+  <img src="./assets/hero_banner.svg" length="100%" alt="Parth Lawand - Systems Architect" />
 </div>
 
 <br />
 
-### `SYSTEM_KERNEL` // IDENTITY_RESPONSE
-
-```json
-{
-  "ENTITY": "Parth Lawand",
-  "CLASS": "L5_Systems_Architect",
-  "RUNTIME_ENVIRONMENT": {
-    "PRIMARY": "Java (Spring Boot)",
-    "SECONDARY": "Python",
-    "INFRASTRUCTURE": ["AWS", "Docker", "Kubernetes"]
-  },
-  "CORE_DIRECTIVES": [
-    "Design Fault-Tolerant Systems",
-    "Optimize for High Throughput",
-    "Automate Everything"
-  ],
-  "STATUS": "READY_FOR_DEPLOYMENT"
-}
-```
-
-<br />
-
-### `KUBERNETES_CLUSTER` // LIVE_DEPLOYMENTS
-
-<pre>
-USER@PARTH-LAWAND:~# kubectl get pods -o wide --namespace=production
-NAME                                    READY   STATUS    RESTARTS   AGE    IP              NODE
-<a href="#">workflow-orchestrator-7d9f8c</a>        1/1     Running   0          42d    10.0.1.5        worker-scaling-nodegroup
-<a href="#">secure-employee-mgmt-5f4b3a</a>         1/1     Running   0          18d    10.0.1.12       worker-security-nodegroup
-<a href="#">terms-summariser-nlp-9a2b1f</a>         1/1     Running   2          6h     10.0.2.8        worker-gpu-nodegroup
-<a href="#">legacy-monolith-importer</a>            0/1     Completed 0          2y     10.0.3.2        worker-archived
-</pre>
-
-<br />
-
-### `SYSTEM_LOAD` // PERFORMANCE_METRICS
+<h1 align="center">&nbsp;&nbsp; ENGINEER &nbsp;&bull;&nbsp; ARCHITECT &nbsp;&bull;&nbsp; BUILDER &nbsp;&nbsp;</h1>
 
 <div align="center">
-  <img src="./assets/metric_gauges.svg" width="100%" alt="Activity Gauges" />
-</div>
-
-<br />
-
-### `INFRASTRUCTURE_VIEW` // SKILL_TOPOLOGY
-
-<div align="center">
-  <img src="./assets/iso_architecture.svg" width="100%" alt="Isometric Architecture" />
-</div>
-
-<br />
-
-### `AUDIT_LOGS` // CERTIFIED_EVENTS
-
-> **[INFO]** `Reliance Foundation Undergraduate Scholar` verified at hash `0x5A1...`  
-> **[INFO]** `Oracle Certified Java SE 17 Developer` verified at hash `0xB32...`  
-> **[INFO]** `OCI Generative AI Professional` verified at hash `0xC99...`  
-
-<br />
-
-### `UPLINK_TERMINAL` // TRANSMISSION
-
-<div align="center">
-
-| CHANNEL | PROTOCOL | STATUS | ACTION |
-| :--- | :--- | :--- | :--- |
-| **GITHUB** | `HTTPS` | <img src="https://img.shields.io/badge/CONNECTED-brightgreen?style=flat-square&logo=github&labelColor=1a1b26&color=10b981" /> | [Global_Pull](https://github.com/parthlawand) |
-| **LINKEDIN** | `WSS` | <img src="https://img.shields.io/badge/CONNECTED-brightgreen?style=flat-square&logo=linkedin&labelColor=1a1b26&color=0077b5" /> | [Handshake_Init](https://linkedin.com/in/parthlawand) |
-| **EMAIL** | `SMTP` | <img src="https://img.shields.io/badge/OPEN_RELAY-orange?style=flat-square&logo=gmail&labelColor=1a1b26&color=ea4335" /> | [Send_Packet](mailto:contact@parthlawand.dev) |
-
+  <i>"I build systems that survive the chaos of production."</i>
 </div>
 
 <br />
 
 <div align="center">
-  <code>// END_OF_TRANSMISSION</code>
+  <a href="https://linkedin.com/in/parthlawand"><img src="https://img.shields.io/badge/Connect-LinkedIn-0077b5?style=for-the-badge&logo=linkedin" height="30" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:contact@parthlawand.dev"><img src="https://img.shields.io/badge/Contact-Email-ea4335?style=for-the-badge&logo=gmail" height="30" /></a>
+</div>
+
+<br />
+<br />
+
+### 01 // THE TERMINAL
+
+<div align="center">
+  <img src="./assets/interactive_terminal.svg" width="100%" alt="Interactive Terminal" />
+</div>
+
+<br />
+
+### 02 // THE STACK (HOLOGRAPHIC VIEW)
+
+<div align="center">
+  <img src="./assets/tech_stack_iso.svg" width="100%" alt="Tech Stack Hologram" />
+</div>
+
+<br />
+
+### 03 // ARCHITECTED SYSTEMS
+
+| **PROJECT** | **ARCHITECTURE & DESIGN** | **METRICS** |
+| :--- | :--- | :--- |
+| **Workflow Orchestrator** | `Event-Driven` `Kafka` `DLQ Pattern` `Spring Boot` <br/> *A massively scalable engine for async workflows.* | ![Reliability](https://img.shields.io/badge/Reliability-99.99%25-green?style=flat-square) <br/> ![Throughput](https://img.shields.io/badge/Throughput-5k_EPS-blue?style=flat-square) |
+| **Secure Employee System** | `RBAC` `Spring Security` `JWT` `Audit Logging` <br/> *Enterprise-grade security module.* | ![Security](https://img.shields.io/badge/Security-A%2B-success?style=flat-square) <br/> ![Compliance](https://img.shields.io/badge/Audit-100%25-yellow?style=flat-square) |
+| **T&C Summariser** | `NLP` `Transformers` `Python` `REST` <br/> *AI-powered legal text extraction.* | ![Recall](https://img.shields.io/badge/Recall-94%25-blueviolet?style=flat-square) <br/> ![Latency](https://img.shields.io/badge/Latency-200ms-orange?style=flat-square) |
+
+<br />
+
+### 04 // CERTIFIED INTELLIGENCE
+
+> <img src="https://img.shields.io/badge/ORACLE-JAVA_SE_17-f80000?style=flat-square&logo=oracle&logoColor=white" /> **Oracle Certified Developer**  
+> <img src="https://img.shields.io/badge/RELIANCE-SCHOLAR_AWARD-0057b8?style=flat-square" /> **Undergraduate Top 5%**  
+> <img src="https://img.shields.io/badge/OCI-GEN_AI_PRO-1a202c?style=flat-square" /> **Generative AI Professional**
+
+<br />
+
+<div align="center">
+  <br />
+  <img src="https://komarev.com/ghpvc/?username=parthlawand&style=flat-square&color=blueviolet&label=PROFILE+VIEWS" />
+  <br />
+  <br />
+  <code>© 2024 Parth Lawand. All Systems Operational.</code>
 </div>

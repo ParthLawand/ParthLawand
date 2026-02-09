@@ -1,0 +1,85 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glitch-filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="1" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 -0.5" in="noise" result="coloredNoise" />
+      <feComposite operator="in" in="coloredNoise" in2="SourceGraphic" result="glitch" />
+      <feBlend mode="screen" in="glitch" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&amp;display=swap');
+    
+    .bg { fill: #0a0a0a; }
+    .term-window { stroke: #333; stroke-width: 2; fill: #050505; }
+    .text { font-family: 'Fira Code', monospace; font-size: 14px; fill: #e0e0e0; }
+    .keyword { fill: #ff79c6; filter: url(#glow); }
+    .string { fill: #f1fa8c; }
+    .func { fill: #8be9fd; }
+    .comment { fill: #6272a4; font-style: italic; }
+    
+    .cursor {
+      fill: #50fa7b;
+      animation: blink 1s step-end infinite;
+    }
+    
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    
+    .typing-1 { animation: type 2s steps(40, end); opacity: 0; animation-fill-mode: forwards; animation-delay: 0.5s; }
+    .typing-2 { animation: type 1.5s steps(30, end); opacity: 0; animation-fill-mode: forwards; animation-delay: 2.5s; }
+    .typing-3 { animation: type 1s steps(20, end); opacity: 0; animation-fill-mode: forwards; animation-delay: 4.0s; }
+    .result   { animation: fade 0.5s ease-out; opacity: 0; animation-fill-mode: forwards; animation-delay: 5.0s; }
+
+    @keyframes type { 0% { opacity: 1; clip-path: inset(0 100% 0 0); } 100% { opacity: 1; clip-path: inset(0 0 0 0); } }
+    @keyframes fade { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+
+  <rect width="100%" height="100%" class="bg" rx="4" />
+
+  <!-- Terminal Header -->
+  <rect x="0" y="0" width="800" height="30" fill="#1a1a1a" rx="4" />
+  <circle cx="20" cy="15" r="5" fill="#ff5555" />
+  <circle cx="40" cy="15" r="5" fill="#f1fa8c" />
+  <circle cx="60" cy="15" r="5" fill="#50fa7b" />
+  <text x="380" y="20" class="text" fill="#6272a4" font-size="12">parth@systems-core:~</text>
+
+  <!-- Content -->
+  <g transform="translate(30, 60)">
+    
+    <!-- Command 1 -->
+    <text x="0" y="0" class="text typing-1">
+      <tspan fill="#50fa7b">➜</tspan> <tspan class="keyword">class</tspan> <tspan class="func">Architect</tspan> <tspan class="keyword">extends</tspan> <tspan class="func">Engineer</tspan> {
+    </text>
+
+    <!-- Command 2 -->
+    <text x="20" y="30" class="text typing-2">
+      <tspan class="comment">// Configuring core systems...</tspan>
+    </text>
+
+    <!-- Command 3 -->
+    <text x="20" y="60" class="text typing-3">
+      <tspan class="keyword">return</tspan> <tspan class="func">deploy</tspan>(<tspan class="string">"Production-Scale"</tspan>);
+    </text>
+    
+    <!-- Result -->
+    <g class="result" transform="translate(20, 100)">
+        <rect width="700" height="150" fill="#111" stroke="#333" rx="4" />
+        <text x="20" y="30" class="text" fill="#bd93f9">BUILD SUCCESSFUL</text>
+        <text x="20" y="60" class="text">--------------------------------------------------</text>
+        <text x="20" y="90" class="text">Target:     <tspan class="func">Global Distributed System</tspan></text>
+        <text x="20" y="110" class="text">Latency:    <tspan class="string">12ms</tspan></text>
+        <text x="20" y="130" class="text">Status:     <tspan fill="#50fa7b">Live & Ready</tspan></text>
+    </g>
+
+    <rect x="360" y="47" width="10" height="18" class="cursor" />
+
+  </g>
+</svg>
