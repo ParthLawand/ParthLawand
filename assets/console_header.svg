@@ -1,0 +1,156 @@
+<svg width="850" height="350" viewBox="0 0 850 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1f2937" stroke-width="0.5"/>
+    </pattern>
+    <clipPath id="screen-clip">
+      <rect x="0" y="0" width="850" height="350" rx="10" />
+    </clipPath>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+    
+    .bg { fill: #050505; }
+    .panel-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; opacity: 0.8; }
+    .text-mono { font-family: 'JetBrains Mono', monospace; }
+    .cyan { fill: #00f3ff; text-shadow: 0 0 5px rgba(0, 243, 255, 0.5); }
+    .green { fill: #0aff00; text-shadow: 0 0 5px rgba(10, 255, 0, 0.5); }
+    .red { fill: #ff003c; text-shadow: 0 0 5px rgba(255, 0, 60, 0.5); }
+    .dim { fill: #484f58; }
+    .white { fill: #c9d1d9; }
+    
+    .scan-line {
+      fill: url(#grid);
+      opacity: 0.3;
+    }
+
+    /* Animations */
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    @keyframes scroll-up { 
+      0% { transform: translateY(0); } 
+      100% { transform: translateY(-100px); } 
+    }
+    @keyframes pulse-radar {
+      0% { r: 0; opacity: 1; }
+      100% { r: 60; opacity: 0; }
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+
+    .blink-anim { animation: blink 2s infinite; }
+    .scroll-text { animation: scroll-up 10s linear infinite; }
+    .radar-pulse { animation: pulse-radar 2s infinite ease-out; transform-origin: center; }
+    .spinner { animation: spin 4s linear infinite; transform-origin: 20px 20px; }
+    .glitch-text { animation: glitch 3s infinite alternate-reverse; }
+
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg" rx="10" />
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.2" clip-path="url(#screen-clip)" />
+
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="850" height="30" fill="#0d1117" opacity="0.9" />
+  <text x="15" y="20" class="text-mono cyan" font-size="12" font-weight="bold">PARTH_LAWAND // MISSION_CONTROL_V2.0</text>
+  <text x="750" y="20" class="text-mono green blink-anim" font-size="12">● ONLINE</text>
+
+  <!-- Left Panel: Identity -->
+  <g transform="translate(20, 50)">
+    <rect width="250" height="280" class="panel-bg" rx="4" />
+    <text x="15" y="25" class="text-mono white" font-size="14" font-weight="bold">IDENTITY_MATRIX</text>
+    <line x1="15" y1="35" x2="235" y2="35" stroke="#30363d" stroke-width="1" />
+    
+    <!-- Avatar Placeholder / DNA Helix -->
+    <g transform="translate(85, 80)">
+       <circle cx="40" cy="0" r="30" stroke="#00f3ff" stroke-width="2" fill="none" stroke-dasharray="10 5">
+         <animateTransform attributeName="transform" type="rotate" from="0 40 0" to="360 40 0" dur="10s" repeatCount="indefinite" />
+       </circle>
+       <circle cx="40" cy="0" r="15" fill="#00f3ff" opacity="0.3" class="blink-anim" />
+    </g>
+
+    <!-- Stats -->
+    <g transform="translate(15, 140)">
+      <text y="0" class="text-mono dim" font-size="10">ROLE</text>
+      <text y="15" class="text-mono white" font-size="12">BACKEND ENGINEER</text>
+      
+      <text y="40" class="text-mono dim" font-size="10">SPECIALIZATION</text>
+      <text y="55" class="text-mono cyan glitch-text" font-size="12">DISTRIBUTED SYSTEMS</text>
+
+      <text y="80" class="text-mono dim" font-size="10">CLEARANCE</text>
+      <text y="95" class="text-mono green" font-size="12">L5_ARCHITECT</text>
+    </g>
+  </g>
+
+  <!-- Center Panel: Logs -->
+  <g transform="translate(290, 50)">
+    <rect width="320" height="280" class="panel-bg" rx="4" />
+    <text x="15" y="25" class="text-mono white" font-size="14" font-weight="bold">SYSTEM_LOGS</text>
+    <line x1="15" y1="35" x2="305" y2="35" stroke="#30363d" stroke-width="1" />
+    
+    <!-- Scrolling Log Area -->
+    <svg x="15" y="45" width="290" height="220" viewBox="0 0 290 220">
+      <g class="scroll-text">
+        <text x="0" y="10" class="text-mono dim" font-size="10">[13:00] INIT: Spring Boot Context Initialized</text>
+        <text x="0" y="25" class="text-mono green" font-size="10">[13:01] SUCCESS: Kafka Broker Connected</text>
+        <text x="0" y="40" class="text-mono dim" font-size="10">[13:02] WARN: High Latency in Microservice_A</text>
+        <text x="0" y="55" class="text-mono cyan" font-size="10">[13:05] DEPLOY: Terraform Apply Complete</text>
+        <text x="0" y="70" class="text-mono dim" font-size="10">[13:10] INFO: User Authentication - OK</text>
+        <text x="0" y="85" class="text-mono white" font-size="10">[13:15] COMMIT: "Refactor Event Loop"</text>
+        <text x="0" y="100" class="text-mono dim" font-size="10">[13:20] LOG: Garbage Collection finished</text>
+        <text x="0" y="115" class="text-mono green" font-size="10">[13:25] UPTIME: 99.999% Achieved</text>
+        <text x="0" y="130" class="text-mono red blinking" font-size="10">[13:30] ALERT: Intrusion Attempt Blocked</text>
+        
+        <!-- Duplicate for loop -->
+        <text x="0" y="160" class="text-mono dim" font-size="10">[13:00] INIT: Spring Boot Context Initialized</text>
+        <text x="0" y="175" class="text-mono green" font-size="10">[13:01] SUCCESS: Kafka Broker Connected</text>
+      </g>
+    </svg>
+  </g>
+
+  <!-- Right Panel: Radar/Network -->
+  <g transform="translate(630, 50)">
+    <rect width="200" height="180" class="panel-bg" rx="4" />
+    <text x="15" y="25" class="text-mono white" font-size="14" font-weight="bold">ACTIVITY_RADAR</text>
+    
+    <!-- Radar Circle -->
+    <g transform="translate(100, 100)">
+      <circle r="60" stroke="#30363d" stroke-width="1" fill="none" />
+      <circle r="40" stroke="#30363d" stroke-width="1" fill="none" />
+      <circle r="20" stroke="#30363d" stroke-width="1" fill="none" />
+      
+      <!-- Sweep -->
+      <line x1="0" y1="0" x2="0" y2="-60" stroke="#00f3ff" stroke-width="2">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="2s" repeatCount="indefinite" />
+      </line>
+      
+      <!-- Blips -->
+      <circle cx="20" cy="-30" r="2" fill="#0aff00" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="-40" cy="10" r="2" fill="#ff003c" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <!-- Status Blocks -->
+    <g transform="translate(0, 190)">
+      <rect width="200" height="90" class="panel-bg" rx="4" />
+      <text x="15" y="20" class="text-mono dim" font-size="10">ACTIVE_PROJECTS</text>
+      <rect x="15" y="30" width="10" height="10" fill="#0aff00" class="blink-anim" />
+      <rect x="30" y="30" width="10" height="10" fill="#0aff00" class="blink-anim" style="animation-delay: 0.2s" />
+      <rect x="45" y="30" width="10" height="10" fill="#0aff00" class="blink-anim" style="animation-delay: 0.4s" />
+       
+      <text x="15" y="60" class="text-mono dim" font-size="10">NEXT_GOAL</text>
+      <text x="15" y="75" class="text-mono white" font-size="12">CLOUD_NATIVE_2.0</text>
+    </g>
+  </g>
+
+</svg>

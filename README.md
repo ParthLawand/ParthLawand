@@ -1,111 +1,82 @@
 <div align="center">
-  <img src="./assets/header.svg" width="100%" alt="System Boot Sequence" />
+  <img src="./assets/console_header.svg" width="100%" alt="Mission Control Dashboard" />
 </div>
 
 <br />
 
-## Item 2: Identity Kernel
-```yaml
-System: Parth Lawand
-Role: Backend Engineer | Systems Thinker
-Architecture_Bias: [ "Event-Driven", "Fault-Tolerant", "Distributed" ]
-Primary_Runtime: Java (Spring Boot)
-Secondary_Runtime: Python
-Latency_Sensitivity: HIGH
-Scale_Awareness: ENABLED
+### `SYSTEM_KERNEL` // IDENTITY_RESPONSE
+
+```json
+{
+  "ENTITY": "Parth Lawand",
+  "CLASS": "L5_Systems_Architect",
+  "RUNTIME_ENVIRONMENT": {
+    "PRIMARY": "Java (Spring Boot)",
+    "SECONDARY": "Python",
+    "INFRASTRUCTURE": ["AWS", "Docker", "Kubernetes"]
+  },
+  "CORE_DIRECTIVES": [
+    "Design Fault-Tolerant Systems",
+    "Optimize for High Throughput",
+    "Automate Everything"
+  ],
+  "STATUS": "READY_FOR_DEPLOYMENT"
+}
 ```
 
 <br />
 
-## Item 3: Live Systems (Active Microservices)
+### `KUBERNETES_CLUSTER` // LIVE_DEPLOYMENTS
 
-<table>
-  <tr>
-    <td width="60%">
-      <h3>Distributed Event-Driven Workflow Orchestrator</h3>
-      <p>A scalable orchestration engine managing complex asynchronous workflows.</p>
-      <code>Kafka</code> <code>Spring Boot</code> <code>DLQ</code> <code>Retries</code>
-    </td>
-    <td width="40%" align="right">
-      <img src="./assets/status.svg" alt="Status: RUNNING" />
-      <br />
-      <strong>Throughput:</strong> 5k EPS <br />
-      <strong>Uptime:</strong> 99.9%
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>Secure Employee Management System</h3>
-      <p>Role-based access control system with audit logging and high security.</p>
-      <code>Spring Security</code> <code>JWT</code> <code>MySQL</code> <code>Docker</code>
-    </td>
-    <td align="right">
-      <img src="./assets/status.svg" alt="Status: RUNNING" />
-       <br />
-      <strong>Security:</strong> AES-256 <br />
-      <strong>Audit:</strong> Enabled
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>Terms & Conditions Summariser</h3>
-      <p>NLP pipeline to extract key liabilities from legal documents.</p>
-      <code>Python</code> <code>Transformers</code> <code>NLP</code> <code>REST</code>
-    </td>
-    <td align="right">
-      <img src="./assets/status.svg" alt="Status: RUNNING" />
-       <br />
-      <strong>Recall:</strong> 94% <br />
-      <strong>Latency:</strong> 200ms
-    </td>
-  </tr>
-</table>
+<pre>
+USER@PARTH-LAWAND:~# kubectl get pods -o wide --namespace=production
+NAME                                    READY   STATUS    RESTARTS   AGE    IP              NODE
+<a href="#">workflow-orchestrator-7d9f8c</a>        1/1     Running   0          42d    10.0.1.5        worker-scaling-nodegroup
+<a href="#">secure-employee-mgmt-5f4b3a</a>         1/1     Running   0          18d    10.0.1.12       worker-security-nodegroup
+<a href="#">terms-summariser-nlp-9a2b1f</a>         1/1     Running   2          6h     10.0.2.8        worker-gpu-nodegroup
+<a href="#">legacy-monolith-importer</a>            0/1     Completed 0          2y     10.0.3.2        worker-archived
+</pre>
 
 <br />
 
-## Item 4: Verified Logs (Immutable Ledger)
-
-```log
-[2024-01-15T10:00:00Z] [INFO]  SCHOLAR_AWARD: Reliance Foundation Undergraduate Scholar (Top 5%)
-[2023-11-20T14:30:00Z] [INFO]  CERTIFIED: Oracle Certified Java SE 17 Developer
-[2023-09-05T09:15:00Z] [INFO]  CERTIFIED: OCI Generative AI Professional
-[2023-06-10T16:45:00Z] [INFO]  SYSTEM_UPGRADE: Advanced Distributed Systems Architecture
-```
-
-<br />
-
-## Item 5: Skill Dependency Graph
+### `SYSTEM_LOAD` // PERFORMANCE_METRICS
 
 <div align="center">
-  <img src="./assets/skills.svg" width="100%" alt="Skill Graph" />
+  <img src="./assets/metric_gauges.svg" width="100%" alt="Activity Gauges" />
 </div>
 
 <br />
 
-## Item 6: Signal Strength (Community & Leadership)
+### `INFRASTRUCTURE_VIEW` // SKILL_TOPOLOGY
 
-| Scope | Impact Radius | Signal Type |
-| :--- | :--- | :--- |
-| **Mentorship** | Global | `1:1 Guidance` `Code Reviews` |
-| **Workshops** | University | `Tech Talks` `Hands-on Labs` |
-| **Teams** | 5+ Engineers | `Tech Lead` `Architecture Design` |
+<div align="center">
+  <img src="./assets/iso_architecture.svg" width="100%" alt="Isometric Architecture" />
+</div>
 
 <br />
 
-## Item 7: Global Interface (Endpoints)
+### `AUDIT_LOGS` // CERTIFIED_EVENTS
+
+> **[INFO]** `Reliance Foundation Undergraduate Scholar` verified at hash `0x5A1...`  
+> **[INFO]** `Oracle Certified Java SE 17 Developer` verified at hash `0xB32...`  
+> **[INFO]** `OCI Generative AI Professional` verified at hash `0xC99...`  
+
+<br />
+
+### `UPLINK_TERMINAL` // TRANSMISSION
 
 <div align="center">
 
-| Protocol | Endpoint | Status |
-| :--- | :--- | :--- |
-| **HTTP/GET** | [`/github/parthlawand`](https://github.com/parthlawand) | 200 OK |
-| **HTTP/POST** | [`/linkedin/in/parthlawand`](https://linkedin.com/in/parthlawand) | 201 CREATED |
-| **SMTP** | [`mailto:contact@parthlawand.dev`](mailto:contact@parthlawand.dev) | CONNECTED |
+| CHANNEL | PROTOCOL | STATUS | ACTION |
+| :--- | :--- | :--- | :--- |
+| **GITHUB** | `HTTPS` | <img src="https://img.shields.io/badge/CONNECTED-brightgreen?style=flat-square&logo=github&labelColor=1a1b26&color=10b981" /> | [`Global_Pull`](https://github.com/parthlawand) |
+| **LINKEDIN** | `WSS` | <img src="https://img.shields.io/badge/CONNECTED-brightgreen?style=flat-square&logo=linkedin&labelColor=1a1b26&color=0077b5" /> | [`Handshake_Init`](https://linkedin.com/in/parthlawand) |
+| **EMAIL** | `SMTP` | <img src="https://img.shields.io/badge/OPEN_RELAY-orange?style=flat-square&logo=gmail&labelColor=1a1b26&color=ea4335" /> | [`Send_Packet`](mailto:contact@parthlawand.dev) |
 
 </div>
 
 <br />
 
 <div align="center">
-  <code>Localization Support: [ "EN-US", "HI-IN", "MR-IN", "DE-DE" ]</code>
+  <code>// END_OF_TRANSMISSION</code>
 </div>
