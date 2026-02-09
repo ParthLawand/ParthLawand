@@ -1,0 +1,72 @@
+<svg width="450" height="300" viewBox="0 0 450 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&amp;display=swap');
+    .bg { fill: #0d1117; } /* GitHub Dark */
+    .window { fill: #161b22; }
+    .text { font-family: 'Fira Code', monospace; font-size: 12px; fill: #c9d1d9; }
+    .keyword { fill: #ff7b72; } /* Red/Pink */
+    .class-name { fill: #d2a8ff; } /* Purple */
+    .key { fill: #79c0ff; } /* Blue */
+    .string { fill: #a5d6ff; } /* Light Blue */
+    .comment { fill: #8b949e; font-style: italic; }
+    .bracket { fill: #ffd700; }
+  </style>
+
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- Window Frame -->
+  <rect x="10" y="10" width="430" height="280" rx="8" class="window" stroke="#30363d" stroke-width="1" />
+  
+  <!-- Traffic Lights -->
+  <circle cx="30" cy="30" r="6" fill="#ff5f56" />
+  <circle cx="50" cy="30" r="6" fill="#ffbd2e" />
+  <circle cx="70" cy="30" r="6" fill="#27c93f" />
+
+  <!-- Code Content -->
+  <g transform="translate(30, 70)">
+    <text x="0" y="0" class="text">
+      <tspan class="keyword">class</tspan> <tspan class="class-name">ParthLawand</tspan> <tspan class="bracket">{</tspan>
+    </text>
+    
+    <text x="20" y="20" class="text">
+      <tspan class="keyword">constructor</tspan>() <tspan class="bracket">{</tspan>
+    </text>
+
+    <text x="40" y="40" class="text">
+      <tspan class="keyword">this</tspan>.<tspan class="key">name</tspan> = <tspan class="string">"Parth Lawand"</tspan>;
+    </text>
+    
+    <text x="40" y="60" class="text">
+      <tspan class="keyword">this</tspan>.<tspan class="key">education</tspan> = <tspan class="string">"B.Tech CSE (AI/ML)"</tspan>;
+    </text>
+
+    <text x="40" y="80" class="text">
+      <tspan class="keyword">this</tspan>.<tspan class="key">cgpa</tspan> = <tspan class="string">"8.87/10 ⭐"</tspan>;
+    </text>
+
+    <text x="40" y="100" class="text">
+      <tspan class="keyword">this</tspan>.<tspan class="key">learning</tspan> = [<tspan class="string">"Spring"</tspan>, <tspan class="string">"System Design"</tspan>];
+    </text>
+    
+    <text x="20" y="125" class="text">
+      <tspan class="bracket">}</tspan>
+    </text>
+
+    <text x="20" y="155" class="text">
+      <tspan class="class-name">getAchievements</tspan>() <tspan class="bracket">{</tspan>
+    </text>
+
+    <text x="40" y="175" class="text">
+      <tspan class="keyword">return</tspan> [
+    </text>
+    
+    <text x="60" y="195" class="text"><tspan class="string">"🏆 Reliance Foundation Scholar"</tspan>,</text>
+    <text x="60" y="215" class="text"><tspan class="string">"☕ Oracle Certified Java Dev"</tspan>,</text>
+    <text x="60" y="235" class="text"><tspan class="string">"☁️ OCI GenAI Professional"</tspan></text>
+    
+    <text x="40" y="255" class="text">];</text>
+    <text x="20" y="275" class="text"><tspan class="bracket">}</tspan></text>
+    <text x="0" y="295" class="text"><tspan class="bracket">}</tspan></text>
+
+  </g>
+</svg>

@@ -1,64 +1,92 @@
 <div align="center">
-  <img src="./assets/hero_banner.svg" length="100%" alt="Parth Lawand - Systems Architect" />
+  <img src="./assets/clean_banner.svg" length="100%" alt="Parth Lawand - Banner" />
 </div>
 
 <br />
 
-<h1 align="center">&nbsp;&nbsp; ENGINEER &nbsp;&bull;&nbsp; ARCHITECT &nbsp;&bull;&nbsp; BUILDER &nbsp;&nbsp;</h1>
+<h2 align="center">Hi there! I'm <font color="#00f3ff">PARTH LAWAND</font> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px"></h2>
+
+<br />
+
+<h3>🎭 About Me</h3>
+
+<table>
+  <tr>
+    <td valign="center">
+      <img src="./assets/code_bio.svg" width="450" alt="Bio Code Snippet" />
+    </td>
+    <td valign="center">
+      <img src="./assets/dev_illustration.svg" width="350" alt="Developer Illustration" />
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<h3>🚀 My Tech Universe</h3>
 
 <div align="center">
-  <i>"I build systems that survive the chaos of production."</i>
+  <h4>💻 Languages & Core Technologies</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=java,python,js,html,css" />
+  </a>
 </div>
-
-<br />
 
 <div align="center">
-  <a href="https://linkedin.com/in/parthlawand"><img src="https://img.shields.io/badge/Connect-LinkedIn-0077b5?style=for-the-badge&logo=linkedin" height="30" /></a>
-  &nbsp;&nbsp;
-  <a href="mailto:contact@parthlawand.dev"><img src="https://img.shields.io/badge/Contact-Email-ea4335?style=for-the-badge&logo=gmail" height="30" /></a>
+  <h4>🛠 Frameworks & Libraries</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=spring,react,tensorflow,mysql" />
+  </a>
 </div>
-
-<br />
-<br />
-
-### 01 // THE TERMINAL
 
 <div align="center">
-  <img src="./assets/interactive_terminal.svg" width="100%" alt="Interactive Terminal" />
+  <h4>⚙️ Tools & Environment</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,docker,vscode,linux,postman" />
+  </a>
 </div>
-
-<br />
-
-### 02 // THE STACK (HOLOGRAPHIC VIEW)
 
 <div align="center">
-  <img src="./assets/tech_stack_iso.svg" width="100%" alt="Tech Stack Hologram" />
+  <h4>💾 Databases & Cloud Platforms</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=mysql,mongodb,azure,aws" />
+  </a>
 </div>
 
 <br />
 
-### 03 // ARCHITECTED SYSTEMS
+<h3>📊 GitHub Analytics Dashboard</h3>
 
-| **PROJECT** | **ARCHITECTURE & DESIGN** | **METRICS** |
+<div align="center">
+  <a href="https://github.com/parthlawand">
+    <img src="https://github-readme-stats.vercel.app/api?username=parthlawand&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
+  </a>
+  <a href="https://github.com/parthlawand">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=parthlawand&theme=radical&hide_border=true&background=0D1117" alt="GitHub Streak" />
+  </a>
+</div>
+
+<br />
+
+<h3>🎯 Featured Projects Showcase</h3>
+
+| **Project** | **Description** | **Tech Stack** |
 | :--- | :--- | :--- |
-| **Workflow Orchestrator** | `Event-Driven` `Kafka` `DLQ Pattern` `Spring Boot` <br/> *A massively scalable engine for async workflows.* | ![Reliability](https://img.shields.io/badge/Reliability-99.99%25-green?style=flat-square) <br/> ![Throughput](https://img.shields.io/badge/Throughput-5k_EPS-blue?style=flat-square) |
-| **Secure Employee System** | `RBAC` `Spring Security` `JWT` `Audit Logging` <br/> *Enterprise-grade security module.* | ![Security](https://img.shields.io/badge/Security-A%2B-success?style=flat-square) <br/> ![Compliance](https://img.shields.io/badge/Audit-100%25-yellow?style=flat-square) |
-| **T&C Summariser** | `NLP` `Transformers` `Python` `REST` <br/> *AI-powered legal text extraction.* | ![Recall](https://img.shields.io/badge/Recall-94%25-blueviolet?style=flat-square) <br/> ![Latency](https://img.shields.io/badge/Latency-200ms-orange?style=flat-square) |
-
-<br />
-
-### 04 // CERTIFIED INTELLIGENCE
-
-> <img src="https://img.shields.io/badge/ORACLE-JAVA_SE_17-f80000?style=flat-square&logo=oracle&logoColor=white" /> **Oracle Certified Developer**  
-> <img src="https://img.shields.io/badge/RELIANCE-SCHOLAR_AWARD-0057b8?style=flat-square" /> **Undergraduate Top 5%**  
-> <img src="https://img.shields.io/badge/OCI-GEN_AI_PRO-1a202c?style=flat-square" /> **Generative AI Professional**
+| **Workflow API** | Distributed orchestration engine for high-scale processing. | `Spring` `Kafka` |
+| **Secure EMS** | Enterprise Employee Management with RBAC security. | `Spring` `Security` |
+| **AI Summariser** | Legal text extraction using NLP transformers. | `Python` `NLP` |
 
 <br />
 
 <div align="center">
-  <br />
   <img src="https://komarev.com/ghpvc/?username=parthlawand&style=flat-square&color=blueviolet&label=PROFILE+VIEWS" />
-  <br />
-  <br />
-  <code>© 2024 Parth Lawand. All Systems Operational.</code>
+  &nbsp;&nbsp;
+  <a href="https://linkedin.com/in/parthlawand"><img src="https://img.shields.io/badge/LinkedIn-0077b5?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:contact@parthlawand.dev"><img src="https://img.shields.io/badge/Email-ea4335?style=flat-square&logo=gmail&logoColor=white" /></a>
 </div>
+
+<br />
+<center>
+  <code>Developed with ❤️ by Parth Lawand</code>
+</center>
